@@ -1,6 +1,6 @@
 import React from "react";
 import Video from "./Video";
-import Article from "./Video";
+import Article from "./Article";
 
 function List(props) {
   return props.list.map((item) => {
@@ -10,8 +10,6 @@ function List(props) {
 
       case "article":
         return <Article {...item} />;
-      default:
-        return null;
     }
   });
 }

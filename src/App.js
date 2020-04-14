@@ -38,5 +38,5 @@ export default function App() {
     },
   ]);
 
-  return <List list={this.state.list} />;
+  return <List list={list} />;
 }
