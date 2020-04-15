@@ -6,6 +6,7 @@ const DesideView = (props) => (WrappedComponent) => {
   class NewComponent extends React.Component {
     render() {
       const {view} = this.props;
+      
       if (view > 1000) {
         return <Popular />;
       } else {
