@@ -1,4 +1,5 @@
 import React from "react";
+import DesideView from "../hoc/DesideView";
 
 function Video(props) {
   return (
@@ -6,13 +7,13 @@ function Video(props) {
       <iframe
         title={props.title}
         src={props.url}
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <p className="views">Просмотров: {props.views}</p>
     </div>
   );
 }
 
-export default Video;
+export default DesideView(Video);

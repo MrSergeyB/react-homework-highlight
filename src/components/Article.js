@@ -1,4 +1,5 @@
 import React from "react";
+import DesideView from "../hoc/DesideView";
 
 function Article(props) {
   return (
@@ -11,4 +12,4 @@ function Article(props) {
   );
 }
 
-export default Article;
+export default DesideView(Article);
